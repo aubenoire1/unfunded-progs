@@ -236,12 +236,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-st.title("Streamlit App")
-form = st.form(key="form")
-form.subheader("Prompt")
-
-user_prompt = form.text_area("Enter your prompt here", height=200)
-
-
-if form.form_submit_button("Submit"):
-    st.toast(f"User has submitted {user_prompt}")
