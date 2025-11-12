@@ -6,4 +6,4 @@ COPY --chown=app:app . ./
 USER app
 CMD ["bash", "-c", "streamlit run main.py --server.port=$PORT"]
 
-#okok
+#ok tdoes this work?
