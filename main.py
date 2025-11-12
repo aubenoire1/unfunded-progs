@@ -6,6 +6,8 @@ from plotly.subplots import make_subplots
 import numpy as np
 import os
 
+from utility import check_password
+
 # region <--------- Streamlit Page Configuration --------->
 
 st.set_page_config(
