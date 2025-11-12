@@ -225,14 +225,14 @@ def main():
         use_container_width=True
     )
     
-    # Download button
+    '''# Download button
     csv = filtered_df.to_csv(index=False)
     st.download_button(
         label="📥 Download filtered data as CSV",
         data=csv,
         file_name='filtered_programmes.csv',
         mime='text/csv'
-    )
+    )'''
 
 if __name__ == "__main__":
     main()
