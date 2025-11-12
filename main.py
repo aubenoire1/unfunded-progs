@@ -27,7 +27,7 @@ if not check_password():
 
 def load_actual_data():
     
-    file_path = os.path.join("Unfunded prog db data - sample.csv")
+    file_path = os.path.join("synthetic_unfunded_programmes.csv")
     df = pd.read_csv(file_path)
 
     return df
