@@ -78,28 +78,24 @@ def main():
         st.metric(
             label="Total Programmes",
             value=len(filtered_df),
-            delta=f"{len(filtered_df) - len(df)} from total"
         )
     
     with col2:
         st.metric(
             label="Total Agencies",
             value=filtered_df['Agency Name'].nunique(),
-            delta=f"{filtered_df['Agency Name'].nunique() - df['Agency Name'].nunique()} from total"
         )
     
     with col3:
         st.metric(
             label="Total Service Users",
             value=f"{filtered_df['Number of service users'].sum():,}",
-            delta=f"{filtered_df['Number of service users'].sum() - df['Number of service users'].sum():,} from total"
         )
     
     with col4:
         st.metric(
             label="Avg Users per Programme",
             value=f"{filtered_df['Number of service users'].mean():.0f}",
-            delta=f"{filtered_df['Number of service users'].mean() - df['Number of service users'].mean():.0f} from total"
         )
     
     st.markdown("---")
