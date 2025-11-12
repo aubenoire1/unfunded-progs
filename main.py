@@ -25,8 +25,8 @@ if not check_password():
 
 def load_actual_data():
     
-    file_path = os.path.join("Unfunded prog db data - sample.xlsx")
-    df = pd.read_excel(file_path)
+    file_path = os.path.join("Unfunded prog db data - sample.csv")
+    df = pd.read_csv(file_path)
 
     return df
 
